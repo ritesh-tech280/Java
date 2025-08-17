@@ -115,6 +115,6 @@ public class Loops {
             i++ ;
         }
 
-        sc.close();
+       sc.close();
     }
 }

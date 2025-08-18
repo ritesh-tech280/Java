@@ -99,21 +99,20 @@ public class Arrays {
         }
 
         // Program to reverse an array
-        int oldarr[] = new int[5];
-        oldarr[0] = 1;
-        oldarr[1] = 2;
-        oldarr[2] = 3;
-        oldarr[3] = 4;
-        oldarr[4] = 5;
-        int newarr[] = new int[5];
+          int a[] = {1 , 2, 3, 4, 5, 6};
+          int l = a.length;
+          int n = Math.floorDiv(l, 2);
+          int temp ;
+          for(  i = 0 ; i < n ; i++){
+            temp = a[i];
+            a[i] = a[l - 1 - i];
+           a[l - 1 - i] = temp ;
+          }
+          for (int elements : a) {
+            System.out.println(elements + " ");
+          }
 
-        for (i = oldarr.length - 1; i >= 0; i--) {
-            newarr[newarr.length - 1 - i] = oldarr[i];
-        }
-
-        for (int k : newarr) {
-            System.out.print(k + "\t");
-        }
+       
 
         // program to find the maximum elment in the array
         int ar[] = { 12, 34, 56, 4, 7, 67 };
@@ -123,8 +122,7 @@ public class Arrays {
                 max = ar[i];
             }
         }
-
-        // System.out.println("The Maximum element present in the array :" + max);
+        System.out.println("The Maximum element present in the array :" + max);
 
         // program to find the minimum elment in the array
         int arr1[] = { 12, 34, 56, 4, 7, 67 };

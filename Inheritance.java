@@ -105,12 +105,12 @@ public class Inheritance {
 
       Base1 b1 = new Base1();
       Derived1 d1 = new Derived1();
-      Derived1 d1 = new Derived1(3 , 4);
+      // Derived1 d1 = new Derived1(3 , 4);
       ChildDerived c1 = new ChildDerived(12 , 13 , 15);
 
       // this and super keyword in Java
       Aclass e = new Aclass(65);
-      Bclass d = new Bclass(5);
+      // Bclass d = new Bclass(5);
       System.out.println(e.getA());
 
    }

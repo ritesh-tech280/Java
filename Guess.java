@@ -16,7 +16,7 @@ class GuesstheNumber {
 
     public void takeUserInput(Scanner sc) {
 
-        System.out.print("Enter the number(1 - 20) : ");
+        System.out.print("Guess the number(1 - 20) : ");
         num = sc.nextInt();
         noOfGuesses++;
 
@@ -34,7 +34,9 @@ class GuesstheNumber {
         return false;
 
     }
-
+     public void setNoOfGuesses(int noOfGuesses) {
+        this.noOfGuesses = noOfGuesses;
+     }
     public int getNoOfGuesses() {
         return noOfGuesses;
 
